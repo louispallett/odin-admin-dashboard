@@ -61,6 +61,13 @@ input {
     font-weight: bold;
 }
 
+.header-item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
     background-color: rgba(45, 144, 236, 0.938);
