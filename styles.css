@@ -10,7 +10,7 @@ body {
 
 .container {
     display: grid;
-    grid-template: 1fr 6fr / minmax(250px, 15%) 5fr;
+    grid-template: 1fr 6fr / minmax(250px, 20%) 5fr;
     height: 100%
 }
 
@@ -21,7 +21,58 @@ body {
 
 .sidebar {
     grid-area: 1 / 1 / -1 / 2;
-    background-color: pink;
+    background-color: rgb(32, 132, 226);
+    color: white;
+}
+
+.dashboard-logo-text-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1em 0em 1em 0em;
+}
+
+.logo {
+    display: grid;
+    height: 40px;
+    width: 40px;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    /* align-items: end;
+    justify-items: end; */
+    gap: 5px;
+}
+
+.logo > div {
+    background-color: aliceblue;
+    font-size: .5rem;
+}
+
+.logo-item1 {
+    grid-area:  1 / 1 / 3 / 2;
+}
+
+.logo-item2  {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.logo-item3  {
+    /* justify-self: start; */
+    grid-area: 3 / 1 / -1 / 2;
+}
+
+.logo-item4  {
+    grid-area: 2 / 2 / -1 / 3;
+}
+
+.sidebar-links-container {
+    display: flex;
+    flex: 1 auto;
+    flex-direction: column;
+    font-size: 1.5rem;
+    gap: 50px;
 }
 
 .articles {
