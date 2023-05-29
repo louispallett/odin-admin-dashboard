@@ -160,6 +160,12 @@ button {
     content: url(images/home.svg);
 }
 
+#profile::before {
+    content: url(images/profile.svg);
+    height: 28px;
+    width: 28px;
+}
+
 .articles {
     grid-area: 2 / 2 / -1 / -1;
     display: flex;
@@ -180,15 +186,52 @@ button {
 
 .project-item {
     display: grid;
-    grid-template: 1fr 2fr 1fr / 1fr 20fr;
+    grid-template: 1fr 1.5fr 1.2fr / 1fr 20fr;
     background-color: var(--articles-colour);
     border-radius: 10px;
+   /*  box-shadow: 1px 1px 1px 1px; */
 }
 
 .project-item > div:nth-child(1) {
     background-color: rgb(255, 187, 0);
     grid-area: 1 / 1 / 4 / 2;
     border-radius: 10px 0px 0px 10px;
+}
+
+.project-subtitle {
+    align-self: flex-end;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.project-desc {
+    margin-left: 20px;
+}
+
+.project-links {
+    grid-area: 3 / 2 / 4 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.project-links > div {
+/*     border: 1px solid black; */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 100%;
+    padding: 5px;
+}
+
+img:hover {
+    background-color: #84c8f5;
 }
 
 .anounc-trend-container {
