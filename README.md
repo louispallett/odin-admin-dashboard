@@ -8,3 +8,4 @@ Acknowledgements:
 
 "Home" icon from Muhammad Haq, freeicons.io (https://freeicons.io/user-interface-icons-4/home-icon-36707#)
 
+"Profile" icon from MD Badsha Meah, freeicons.io (https://freeicons.io/business-seo-elements/account-business-consultant-settings-specialist-icon-38260)
