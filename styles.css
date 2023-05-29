@@ -26,6 +26,7 @@ body {
     display: grid;
     grid-template: 1fr 1fr / 5fr 3fr;
     margin-bottom: 10px;
+    box-shadow: 0px 3px 20px #5a5959;
 }
 
 .header-item1 {
