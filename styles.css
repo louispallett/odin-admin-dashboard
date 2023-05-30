@@ -221,16 +221,21 @@ button {
 }
 
 .projects {
-    flex: 3 1 450px;
+    flex: 3 0 550px;
     background-color: var(--light-grey);
 }
 
-.project-title {
+.project-title,
+.announcement-title,
+.trending-title {
     margin-top: 10px;
-    margin-left: 50px;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: -10px;
+}
+
+.project-title {
+    margin-left: 50px;
 }
 
 .project-items {
@@ -239,11 +244,12 @@ button {
     gap: 20px;
     margin: 25px 50px;
     min-height: 90%;
+    min-width: 400px;
 }
 
 .project-item {
     display: grid;
-    grid-template: 1fr 1.5fr 1.2fr / 1fr 20fr;
+    grid-template: .8fr 1.5fr 1fr / 1fr 20fr;
     background-color: var(--articles-colour);
     border-radius: 10px;
    /*  box-shadow: 1px 1px 1px 1px; */
@@ -293,7 +299,7 @@ img {
 } */
 
 .anounc-trend-container {
-    flex: 1 2 300px;
+    flex: 1 3 200px;
     background-color: var(--light-grey);
     display: flex;
     flex-direction: column;
@@ -313,7 +319,7 @@ img {
     flex: 1 auto;
 }
 
-.anouncements-container,
+.anouncements-container > div:nth-child(1),
 .trending-container > div:nth-child(1) {
     background-color: var(--articles-colour);
     margin: 0px;
@@ -322,4 +328,10 @@ img {
     margin-bottom: 20px;
     margin-right: 50px;
     border-radius: 10px;
+}
+
+.anouncements-container > div {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
 }
