@@ -159,61 +159,30 @@ button {
 }
 
 .sidebar-links-container {
-    display: flex;
-    flex: 1 auto;
-    flex-direction: column;
+    display: grid;
     font-size: 1.25rem;
     gap: 60px;
-}
-
-.sidebar-links-container > div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.sidebar-links-container > div > li {
     font-weight: bold;
 }
 
-.sidebar-links::before {
-    margin-right: 20px;
+.sidebar-links-container > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 10px;
 }
 
-#home::before {
-    content: url(images/home.svg);
+.sidebar-links-container > div > img {
+    border-radius: 0;
+    justify-self: flex-end;
+    margin-right: 5px;
 }
 
-#profile::before {
-    content: url(images/profile.svg);
+.sidebar-links {
+    align-self: center;
 }
 
-#messages::before {
-    content: url(images/messages.svg);
-}
-
-#history::before {
-    content: url(images/history.svg);
-}
-
-#tasks::before {
-    content: url(images/tasks.svg);
-}
-
-#communites::before {
-    content: url(images/communities.svg);
-}
-
-#settings::before {
-    content: url(images/settings.svg);
-}
-
-#support::before {
-    content: url(images/support.svg);
-}
-
-#privacy::before {
-    content: url(images/privacy.svg);
+.profile-links-container {
+    display: grid;
 }
 
 .articles {
